@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added a `NOTICE` file with project attribution for downstream distributions.
+
 ### Fixed
 - OAMD fields cannot read past their declared element boundary. Truncated elements are bounded by the absolute end of the available payload, so their remaining data is not mistaken for another element.
 - `ObjectAudioMetadataPayload::read` rejects extended metadata whose block counts no longer match the final object element. This prevents `get_damf_pos` from panicking after an object element is replaced.
